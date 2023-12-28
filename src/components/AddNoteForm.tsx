@@ -26,7 +26,7 @@ function AddNoteForm({ noteBeingEdited, addNote }: { noteBeingEdited: any; addNo
       id: newNoteId,
       author: {
         userName: 'ameer', 
-        profile: 'avatar4.jpg', 
+        profile: 'avatar5.png', 
       },
     };
 
@@ -39,9 +39,10 @@ function AddNoteForm({ noteBeingEdited, addNote }: { noteBeingEdited: any; addNo
       priority: 1,
       category: '',
     });
-  }
+  };
+
   return (
-    <form style={{ width: '450px', height: '600px' }} className="relative Form flex flex-col gap-4 bg-white p-10 rounded-3xl shadow-xl">
+    <form style={{ width: '450px', height: '600px' }} className="relative Form flex flex-col gap-4 bg-grey p-10 rounded-3xl shadow-xl">
       <div className="flex flex-col text-start">
         <label htmlFor="note-content">Content</label>
         <textarea
@@ -84,7 +85,7 @@ function AddNoteForm({ noteBeingEdited, addNote }: { noteBeingEdited: any; addNo
         </select>
       </div>
 
-      <button onClick={handleAddNote} type="button" className="absolute right-5 bottom-5 p-4 bg-green-300">
+      <button onClick={handleAddNote} type="button" className="absolute right-5 bottom-5 p-4 bg-blue-300">
         Add Note
       </button>
     </form>

@@ -5,7 +5,7 @@ function Note({ note, editNote, deleteNote }: { note: any; editNote: Function; d
   const getBackgroundColor = (category: string) => {
     switch (category) {
       case 'home':
-        return 'lightblue';
+        return 'lightyellow';
       case 'hobbies':
         return 'lightgreen';
       case 'work':
